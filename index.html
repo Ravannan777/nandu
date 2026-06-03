@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Online Store</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="logo2.jpeg" alt="ShopEase logo" class="logo-image" />
+      </div>
+      <div class="brand-text">
+        <span class="logo">ShopEase</span>
+        <p>Buy Nandu. Infinity Digital works.</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="current">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="products.html">Products</a>
+      <a href="orders.html">Orders</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="audioToggleBtn" class="audio-toggle">Pause music</button>
+      <div class="cart-button">
+        <button id="cartBtn">Cart <span id="cartCount">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div>
+        <h1>Shopping made easy like Amazon & Flipkart.</h1>
+        <p>Find top products, flash deals, and fast browsing on one page.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn-primary">Browse Best Sellers</a>
+          <a href="products.html" class="btn-secondary">Start Shopping</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <video autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=900">
+          <source src="https://www.pexels.com/download/video/10130555/" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="section-light cards-row">
+      <h2>About ShopEase</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Welcome to ShopEase</h3>
+          <p>ShopEase is a premium demo storefront designed to show a modern shopping experience in one place. This website is built with HTML, CSS, and JavaScript for clean navigation and smooth interactions.</p>
+        </article>
+        <article class="card">
+          <h3>What this site offers</h3>
+          <p>Use the menu to visit separate pages for categories, products, and contact. The homepage keeps things simple with only the welcome message and website details.</p>
+        </article>
+        <article class="card">
+          <h3>Website details</h3>
+          <p>This website is a demonstration project created for illustrative purposes only. None of the products, services, or information displayed are real. It is a sample website developed by web development teams to showcase design and functionality to potential clients.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <audio id="backgroundAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" preload="auto" autoplay loop playsinline aria-label="Dolby Atmos Demo Track"></audio>
+  <div id="snackbar" class="snackbar"></div>
+  <footer class="site-footer">
+    <p>Site designed and built by <strong>Sreenand K</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

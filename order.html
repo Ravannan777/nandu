@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Order Details</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="logo2.jpeg" alt="ShopEase logo" class="logo-image" />
+      </div>
+      <div class="brand-text">
+        <span class="logo">ShopEase</span>
+        <p>Buy smart. Shop smooth.</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="products.html">Products</a>
+      <a href="orders.html" class="current">Orders</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="cart-button">
+      <button id="cartBtn">Cart <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div>
+        <h1>Order details</h1>
+        <p>Quick mobile checkout with compact product info and a clean order form.</p>
+        <a href="products.html" class="btn-secondary">Back to products</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://bmw.scene7.com/is/image/BMW/na5_home-teaser?wid=2560&hei=2560" alt="Order details" />
+      </div>
+    </section>
+
+    <section class="section-light cards-row">
+      <h2>Quick order summary</h2>
+      <div class="card-grid">
+        <article class="card order-selected-card">
+          <h3>Product selected</h3>
+          <img id="selectedProductImage" src="" alt="Selected product" />
+          <p id="selectedProduct">Loading selected product...</p>
+        </article>
+        <article class="card">
+          <h3>Support ready</h3>
+          <p id="orderPhone">Call or WhatsApp: +91 98765 43210</p>
+        </article>
+        <article class="card">
+          <h3>Delivery info</h3>
+          <p id="orderAddress">ShopEase Store, 12 Digital Avenue, Tech City, Kerala, India</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-dark">
+      <div class="section-header">
+        <h2>Complete your order</h2>
+        <p>Fill the information below and choose a payment method to finish your order.</p>
+      </div>
+      <div class="order-form-wrapper">
+        <form class="order-form">
+          <label for="orderProduct">Product</label>
+          <input id="orderProduct" name="orderProduct" readonly />
+
+          <label for="customerName">Your name</label>
+          <input id="customerName" name="customerName" type="text" placeholder="Enter your name" required />
+
+          <label for="customerPhone">Phone number</label>
+          <input id="customerPhone" name="customerPhone" type="tel" placeholder="Enter your phone number" required />
+
+          <label for="customerAddress">Delivery address</label>
+          <textarea id="customerAddress" name="customerAddress" rows="4" placeholder="Enter full delivery address" required></textarea>
+
+          <label for="paymentMethod">Payment method</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">Choose payment</option>
+            <option value="UPI">UPI</option>
+            <option value="Credit/Debit/ATM card">Credit/Debit/ATM card</option>
+            <option value="American Express Platinum & Business">AMERICAN EXPRESS (Platinum & Business)</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Place order</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-light contact-section">
+      <h2>Questions before placing order?</h2>
+      <p>Reach out to our support team. We're here to help you complete your purchase.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <textarea placeholder="Your message or order details" rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="snackbar" class="snackbar"></div>
+  <footer class="site-footer">
+    <p>Site designed and built by <strong>Sreenand K</strong>.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

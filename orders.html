@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Your Orders</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="logo2.jpeg" alt="ShopEase logo" class="logo-image" />
+      </div>
+      <div class="brand-text">
+        <span class="logo">ShopEase</span>
+        <p>Buy smart. Shop smooth.</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="products.html">Products</a>
+      <a href="orders.html" class="current">Orders</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="cart-button">
+      <button id="cartBtn">Cart <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div>
+        <h1>Your orders</h1>
+        <p>Review every purchase you made and revisit the details of your latest order.</p>
+        <a href="products.html" class="btn-primary">Continue shopping</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Order history" />
+      </div>
+    </section>
+
+    <section class="section-light cards-row">
+      <h2>Latest order</h2>
+      <div class="card-grid" id="latestOrderCard">
+        <article class="card">
+          <h3>No orders yet</h3>
+          <p>Complete a purchase first and your latest order will appear here.</p>
+          <a href="products.html" class="btn-secondary">Shop now</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-dark">
+      <div class="section-header">
+        <h2>Order history</h2>
+        <p>All saved orders are shown here in your browser.</p>
+      </div>
+      <div class="card-grid order-history" id="orderHistoryList">
+        <article class="card">
+          <h3>No order history</h3>
+          <p>Once you place an order, it will appear here so you can review it again.</p>
+          <a href="products.html" class="btn-secondary">Start shopping</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="snackbar" class="snackbar"></div>
+  <footer class="site-footer">
+    <p>Site designed and built by <strong>Sreenand K</strong>.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
